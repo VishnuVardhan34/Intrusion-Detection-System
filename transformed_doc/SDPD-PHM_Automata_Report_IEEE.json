@@ -1,0 +1,51 @@
+[
+  {
+    "sid": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+    "title": "Comparative Analysis and a Hybrid Solution for Efficient Automata Construction and Minimization",
+    "level": 1,
+    "children": [
+      {
+        "sid": "/abstract",
+        "title": "Abstract",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      },
+      {
+        "sid": "/keywords",
+        "title": "Keywords",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      },
+      {
+        "sid": "/i-introduction",
+        "title": "I. INTRODUCTION",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      },
+      {
+        "sid": "/ii-literature-review",
+        "title": "II. LITERATURE REVIEW",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      },
+      {
+        "sid": "/iii-materials-and-methods",
+        "title": "III. MATERIALS AND METHODS",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      },
+      {
+        "sid": "/references",
+        "title": "REFERENCES",
+        "level": 2,
+        "parent": "/comparative-analysis-and-a-hybrid-solution-for-efficient-automata-construction-and-minimization",
+        "children": []
+      }
+    ]
+  }
+]

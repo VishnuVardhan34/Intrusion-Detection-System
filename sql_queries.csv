@@ -1,0 +1,7 @@
+query
+SELECT * FROM users WHERE name='' OR '1'='1';
+<script>alert('XSS');</script>
+SELECT * FROM accounts WHERE id=1;
+DROP TABLE users;
+INSERT INTO users (name, password) VALUES ('admin', 'password');
+rm -rf /

