@@ -1,0 +1,9 @@
+algorithm,class,tp,fp,fn,precision,recall
+baseline,benign,600,27,0,0.957,1.0
+baseline,cmd_injection,64,0,36,1.0,0.64
+baseline,sql_injection,150,9,0,0.943,1.0
+baseline,xss,150,0,0,1.0,1.0
+hybrid,benign,600,27,0,0.957,1.0
+hybrid,cmd_injection,64,0,36,1.0,0.64
+hybrid,sql_injection,150,9,0,0.943,1.0
+hybrid,xss,150,0,0,1.0,1.0

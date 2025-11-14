@@ -1,0 +1,38 @@
+{
+  "total": 1000,
+  "correct": 801,
+  "accuracy": 0.801,
+  "per_class": {
+    "benign": {
+      "tp": 420,
+      "fp": 19,
+      "fn": 180,
+      "precision": 0.957,
+      "recall": 0.7
+    },
+    "cmd_injection": {
+      "tp": 81,
+      "fp": 60,
+      "fn": 19,
+      "precision": 0.574,
+      "recall": 0.81
+    },
+    "sql_injection": {
+      "tp": 150,
+      "fp": 120,
+      "fn": 0,
+      "precision": 0.556,
+      "recall": 1.0
+    },
+    "xss": {
+      "tp": 150,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "avg_latency_ms": 0.006,
+  "median_latency_ms": 0.0,
+  "throughput_rps": 177950.955
+}

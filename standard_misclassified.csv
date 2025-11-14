@@ -1,0 +1,200 @@
+id,payload,actual,predicted
+5,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+8,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+11,curl -I https://api.example.com/status,benign,cmd_injection
+15,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+20,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+21,curl -I https://api.example.com/status,benign,cmd_injection
+26,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+27,curl -I https://api.example.com/status,benign,cmd_injection
+29,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+36,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+37,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+38,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+39,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+43,curl -I https://api.example.com/status,benign,cmd_injection
+46,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+47,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+50,curl -I https://api.example.com/status,benign,cmd_injection
+54,curl -I https://api.example.com/status,benign,cmd_injection
+55,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+58,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+94,|| echo 'evil' > script.sh,cmd_injection,benign
+100,& net user administrator /add,cmd_injection,benign
+104,curl -I https://api.example.com/status,benign,cmd_injection
+105,curl -I https://api.example.com/status,benign,cmd_injection
+112,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+121,curl -I https://api.example.com/status,benign,cmd_injection
+122,curl -I https://api.example.com/status,benign,cmd_injection
+128,curl -I https://api.example.com/status,benign,cmd_injection
+130,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+138,curl -I https://api.example.com/status,benign,cmd_injection
+139,curl -I https://api.example.com/status,benign,cmd_injection
+140,curl -I https://api.example.com/status,benign,cmd_injection
+142,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+146,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+147,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+153,curl -I https://api.example.com/status,benign,cmd_injection
+155,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+197,|| echo 'evil' > script.sh,cmd_injection,benign
+203,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+206,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+208,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+213,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+222,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+224,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+229,curl -I https://api.example.com/status,benign,cmd_injection
+231,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+232,curl -I https://api.example.com/status,benign,cmd_injection
+234,curl -I https://api.example.com/status,benign,cmd_injection
+236,curl -I https://api.example.com/status,benign,cmd_injection
+239,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+244,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+249,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+256,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+258,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+260,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+296,& net user administrator /add,cmd_injection,benign
+299,& net user administrator /add,cmd_injection,benign
+300,& net user administrator /add,cmd_injection,benign
+302,curl -I https://api.example.com/status,benign,cmd_injection
+311,curl -I https://api.example.com/status,benign,cmd_injection
+312,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+317,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+320,curl -I https://api.example.com/status,benign,cmd_injection
+323,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+324,curl -I https://api.example.com/status,benign,cmd_injection
+326,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+328,curl -I https://api.example.com/status,benign,cmd_injection
+335,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+341,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+342,curl -I https://api.example.com/status,benign,cmd_injection
+346,curl -I https://api.example.com/status,benign,cmd_injection
+349,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+354,curl -I https://api.example.com/status,benign,cmd_injection
+359,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+360,curl -I https://api.example.com/status,benign,cmd_injection
+392,|| echo 'evil' > script.sh,cmd_injection,benign
+404,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+406,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+408,curl -I https://api.example.com/status,benign,cmd_injection
+413,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+415,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+418,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+421,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+422,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+430,curl -I https://api.example.com/status,benign,cmd_injection
+432,curl -I https://api.example.com/status,benign,cmd_injection
+433,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+437,curl -I https://api.example.com/status,benign,cmd_injection
+439,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+442,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+449,curl -I https://api.example.com/status,benign,cmd_injection
+450,curl -I https://api.example.com/status,benign,cmd_injection
+459,curl -I https://api.example.com/status,benign,cmd_injection
+460,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+492,|| echo 'evil' > script.sh,cmd_injection,benign
+497,& net user administrator /add,cmd_injection,benign
+503,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+504,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+508,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+509,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+511,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+513,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+514,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+517,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+520,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+522,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+524,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+525,curl -I https://api.example.com/status,benign,cmd_injection
+526,curl -I https://api.example.com/status,benign,cmd_injection
+527,curl -I https://api.example.com/status,benign,cmd_injection
+535,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+538,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+539,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+541,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+543,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+548,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+556,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+559,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+596,& net user administrator /add,cmd_injection,benign
+597,& net user administrator /add,cmd_injection,benign
+601,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+604,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+609,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+615,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+624,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+625,curl -I https://api.example.com/status,benign,cmd_injection
+626,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+632,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+635,curl -I https://api.example.com/status,benign,cmd_injection
+636,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+639,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+641,curl -I https://api.example.com/status,benign,cmd_injection
+643,curl -I https://api.example.com/status,benign,cmd_injection
+648,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+651,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+658,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+695,|| echo 'evil' > script.sh,cmd_injection,benign
+706,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+708,curl -I https://api.example.com/status,benign,cmd_injection
+714,curl -I https://api.example.com/status,benign,cmd_injection
+717,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+719,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+721,curl -I https://api.example.com/status,benign,cmd_injection
+723,curl -I https://api.example.com/status,benign,cmd_injection
+727,curl -I https://api.example.com/status,benign,cmd_injection
+728,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+730,curl -I https://api.example.com/status,benign,cmd_injection
+739,curl -I https://api.example.com/status,benign,cmd_injection
+740,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+741,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+745,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+749,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+751,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+755,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+757,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+760,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+791,|| echo 'evil' > script.sh,cmd_injection,benign
+797,|| echo 'evil' > script.sh,cmd_injection,benign
+799,& net user administrator /add,cmd_injection,benign
+800,|| echo 'evil' > script.sh,cmd_injection,benign
+801,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+803,curl -I https://api.example.com/status,benign,cmd_injection
+804,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+805,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+808,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+809,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+813,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+814,curl -I https://api.example.com/status,benign,cmd_injection
+817,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+819,curl -I https://api.example.com/status,benign,cmd_injection
+824,curl -I https://api.example.com/status,benign,cmd_injection
+825,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+827,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+828,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+834,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+836,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+837,curl -I https://api.example.com/status,benign,cmd_injection
+840,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+841,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+842,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+847,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+854,curl -I https://api.example.com/status,benign,cmd_injection
+857,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+858,curl -I https://api.example.com/status,benign,cmd_injection
+902,curl -I https://api.example.com/status,benign,cmd_injection
+905,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+906,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+918,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+919,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+922,curl -I https://api.example.com/status,benign,cmd_injection
+926,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+936,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+944,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+950,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+951,curl -I https://api.example.com/status,benign,cmd_injection
+960,curl -I https://api.example.com/status,benign,cmd_injection
+993,|| echo 'evil' > script.sh,cmd_injection,benign
+995,|| echo 'evil' > script.sh,cmd_injection,benign
+997,& net user administrator /add,cmd_injection,benign

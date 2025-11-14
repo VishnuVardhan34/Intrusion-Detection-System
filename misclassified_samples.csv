@@ -1,0 +1,256 @@
+id,payload,actual,predicted
+5,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+8,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+15,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+20,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+26,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+29,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+36,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+37,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+38,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+39,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+46,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+47,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+55,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+58,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+61,' OR 1=1 ORDER BY 1--,sql_injection,benign
+62,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+63,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+64,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+65,admin' --,sql_injection,benign
+66,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+67,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+68,' OR '1'='1,sql_injection,benign
+69,')) OR 1=1--,sql_injection,benign
+70,' OR 1=1 ORDER BY 1--,sql_injection,benign
+71,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+72,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+73,' OR 1=1 ORDER BY 1--,sql_injection,benign
+74,admin' --,sql_injection,benign
+75,' OR 1=1 ORDER BY 1--,sql_injection,benign
+76,javascript:alert(document.domain),xss,benign
+79,javascript:alert(document.domain),xss,benign
+83,javascript:alert(document.domain),xss,benign
+112,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+130,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+142,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+146,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+147,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+155,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+161,admin' --,sql_injection,benign
+162,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+163,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+164,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+165,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+166,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+167,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+168,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+169,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+170,admin' --,sql_injection,benign
+171,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+172,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+173,' OR 1=1 ORDER BY 1--,sql_injection,benign
+174,')) OR 1=1--,sql_injection,benign
+177,javascript:alert(document.domain),xss,benign
+182,javascript:alert(document.domain),xss,benign
+203,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+206,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+208,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+213,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+222,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+224,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+231,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+239,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+244,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+249,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+256,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+258,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+260,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+261,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+262,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+264,admin' --,sql_injection,benign
+268,' OR 1=1 ORDER BY 1--,sql_injection,benign
+269,' OR 1=1 ORDER BY 1--,sql_injection,benign
+270,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+271,admin' --,sql_injection,benign
+272,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+273,' OR '1'='1,sql_injection,benign
+275,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+283,javascript:alert(document.domain),xss,benign
+312,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+317,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+323,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+326,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+335,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+341,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+349,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+359,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+361,admin' --,sql_injection,benign
+362,')) OR 1=1--,sql_injection,benign
+363,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+364,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+368,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+371,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+372,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+374,')) OR 1=1--,sql_injection,benign
+375,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+404,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+406,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+413,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+415,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+418,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+421,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+422,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+433,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+439,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+442,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+460,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+461,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+462,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+463,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+464,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+465,' OR '1'='1,sql_injection,benign
+467,' OR 1=1 ORDER BY 1--,sql_injection,benign
+468,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+469,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+470,' OR 1=1 ORDER BY 1--,sql_injection,benign
+471,admin' --,sql_injection,benign
+472,' OR '1'='1,sql_injection,benign
+474,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+487,javascript:alert(document.domain),xss,benign
+503,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+504,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+508,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+509,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+511,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+513,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+514,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+517,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+520,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+522,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+524,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+535,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+538,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+539,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+541,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+543,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+548,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+556,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+559,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+561,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+563,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+564,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+565,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+566,admin' --,sql_injection,benign
+567,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+568,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+569,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+571,')) OR 1=1--,sql_injection,benign
+572,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+573,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+574,' OR 1=1 ORDER BY 1--,sql_injection,benign
+575,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+576,javascript:alert(document.domain),xss,benign
+589,javascript:alert(document.domain),xss,benign
+601,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+604,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+609,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+615,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+624,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+626,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+632,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+636,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+639,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+648,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+651,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+658,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+661,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+663,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+664,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+666,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+667,' OR 1=1 ORDER BY 1--,sql_injection,benign
+670,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+671,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+673,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+674,admin' --,sql_injection,benign
+675,' OR '1'='1,sql_injection,benign
+684,javascript:alert(document.domain),xss,benign
+706,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+717,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+719,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+728,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+740,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+741,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+745,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+749,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+751,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+755,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+757,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+760,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+762,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+763,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+765,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+767,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+768,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+769,' OR 1=1 ORDER BY 1--,sql_injection,benign
+770,')) OR 1=1--,sql_injection,benign
+771,')) OR 1=1--,sql_injection,benign
+772,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+774,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+775,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+801,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+804,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+805,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+808,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+809,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+813,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+817,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+825,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+827,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+828,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+834,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+836,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+840,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+841,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+842,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+847,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+857,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+861,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+862,' OR '1'='1,sql_injection,benign
+863,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+864,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+865,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+866,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+867,' OR 1=1 ORDER BY 1--,sql_injection,benign
+868,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+869,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+871,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+872,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+873,admin' --,sql_injection,benign
+874,' OR '1'='1,sql_injection,benign
+875,' OR 1=1 ORDER BY 1--,sql_injection,benign
+882,javascript:alert(document.domain),xss,benign
+886,javascript:alert(document.domain),xss,benign
+905,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+906,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+918,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+919,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+926,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+936,UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?,benign,sql_injection
+944,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+950,"INSERT INTO orders (user_id, product_id) VALUES (?, ?)",benign,sql_injection
+961,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+962,' OR 1=1 ORDER BY 1--,sql_injection,benign
+963,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+964,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+965,')) OR 1=1--,sql_injection,benign
+966,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+967,'; WAITFOR DELAY '0:0:10'--,sql_injection,benign
+968,'; exec xp_cmdshell('net user'); --,sql_injection,benign
+969,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+970,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+971,"' AND 5195=DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(72)||CHR(110),5)--",sql_injection,benign
+972,"admin' AND 1=CONVERT(int,@@version)--",sql_injection,benign
+973,' OR '1'='1,sql_injection,benign
+974,admin' --,sql_injection,benign
+982,javascript:alert(document.domain),xss,benign

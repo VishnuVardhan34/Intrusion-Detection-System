@@ -1,0 +1,37 @@
+{
+  "total": 1000,
+  "correct": 964,
+  "accuracy": 0.964,
+  "per_class": {
+    "benign": {
+      "tp": 600,
+      "fp": 27,
+      "fn": 0,
+      "precision": 0.957,
+      "recall": 1.0
+    },
+    "cmd_injection": {
+      "tp": 64,
+      "fp": 0,
+      "fn": 36,
+      "precision": 1.0,
+      "recall": 0.64
+    },
+    "sql_injection": {
+      "tp": 150,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.943,
+      "recall": 1.0
+    },
+    "xss": {
+      "tp": 150,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "misclassified_count": 36,
+  "misclassified_file": "D:\\TOC\\intrusion_detection_system\\misclassified_samples.csv"
+}

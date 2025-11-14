@@ -1,0 +1,35 @@
+{
+  "total": 1000,
+  "correct": 745,
+  "accuracy": 0.745,
+  "per_class": {
+    "benign": {
+      "tp": 480,
+      "fp": 135,
+      "fn": 120,
+      "precision": 0.78,
+      "recall": 0.8
+    },
+    "cmd_injection": {
+      "tp": 100,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "sql_injection": {
+      "tp": 28,
+      "fp": 120,
+      "fn": 122,
+      "precision": 0.189,
+      "recall": 0.187
+    },
+    "xss": {
+      "tp": 137,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.913
+    }
+  }
+}
